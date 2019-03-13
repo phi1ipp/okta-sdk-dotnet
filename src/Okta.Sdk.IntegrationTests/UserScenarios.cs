@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using FluentAssertions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Okta.Sdk.Abstractions;
 using Polly;
 using Xunit;
 

@@ -5,6 +5,8 @@
 
 // This file was automatically generated. Don't modify it directly.
 
+using Okta.Sdk.Abstractions;
+
 namespace Okta.Sdk
 {
     /// <summary>

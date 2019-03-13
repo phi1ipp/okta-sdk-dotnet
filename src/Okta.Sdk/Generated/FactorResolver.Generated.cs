@@ -6,6 +6,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Okta.Sdk.Abstractions;
+using Okta.Sdk.Abstractions.Internal;
 
 namespace Okta.Sdk.Internal
 {
@@ -14,6 +16,8 @@ namespace Okta.Sdk.Internal
     /// </summary>
     public class FactorResolver : AbstractResourceTypeResolver<Factor>
     {
+        public override AbstractResourceTypeResolverFactory ResourceTypeResolverFactory { get; set; }
+
         /// <summary>
         /// Gets the type of a Factor resource given its <paramref name="data"/>.
         /// </summary>

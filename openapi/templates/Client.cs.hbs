@@ -10,8 +10,8 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
-using Okta.Sdk.Configuration;
-using Okta.Sdk.Internal;
+using Okta.Sdk.Abstractions;
+using Okta.Sdk.Abstractions.Configuration;
 
 namespace Okta.Sdk
 {

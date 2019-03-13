@@ -6,7 +6,8 @@
 using System;
 using System.Threading.Tasks;
 using FluentAssertions;
-using Okta.Sdk.Configuration;
+using Okta.Sdk.Abstractions;
+using Okta.Sdk.Abstractions.Configuration;
 using Xunit;
 
 namespace Okta.Sdk.IntegrationTests

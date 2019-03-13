@@ -6,6 +6,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Okta.Sdk.Abstractions;
+using Okta.Sdk.Abstractions.Internal;
 
 namespace Okta.Sdk.Internal
 {
@@ -14,6 +16,8 @@ namespace Okta.Sdk.Internal
     /// </summary>
     public class BrowserPluginApplicationResolver : AbstractResourceTypeResolver<BrowserPluginApplication>
     {
+        public override AbstractResourceTypeResolverFactory ResourceTypeResolverFactory { get; set; }
+
         /// <summary>
         /// Gets the type of a BrowserPluginApplication resource given its <paramref name="data"/>.
         /// </summary>
