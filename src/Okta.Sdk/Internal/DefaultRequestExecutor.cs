@@ -202,10 +202,10 @@ namespace Okta.Sdk.Internal
 
             try
             {
-                rateLimitLimit = int.Parse(headers.First(kv => kv.Key == "X-Rate-Limit-Limit").Value.First());
+                rateLimitLimit = int.Parse(headers.First(kv => kv.Key == "x-rate-limit-limit").Value.First());
                 rateLimitRemaining =
-                    int.Parse(headers.First(kv => kv.Key == "X-Rate-Limit-Remaining").Value.First());
-                rateLimitReset = int.Parse(headers.First(kv => kv.Key == "X-Rate-Limit-Reset").Value.First());
+                    int.Parse(headers.First(kv => kv.Key == "x-rate-limit-remaining").Value.First());
+                rateLimitReset = int.Parse(headers.First(kv => kv.Key == "x-rate-limit-reset").Value.First());
             }
             catch (Exception)
             {
